@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background-color: rgb(131, 234, 234);
+      }
+      .top {
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        flex-direction: row;
+        background-color: lightpink;
+        padding: 10px;
+      }
+      .left {
+        width: 75%;
+        height: 12%;
+        display: flex;
+        gap: 10px;
+      }
+      .right {
+        width: 25%;
+        height: 12%;
+        display: flex;
+        gap: 10px;
+      }
+      .top .left .box {
+        width: 100%;
+        height: fit-content;
+        border: 2px solid black;
+        text-align: center;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 5px;
+        box-shadow: 2px 2px rgb(116, 193, 242);
+      }
+      .top .right .box {
+        width: 70%;
+        height: fit-content;
+        border: 2px solid black;
+        text-align: center;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        background-color: aliceblue;
+        border-radius: 5px;
+        box-shadow: 2px 2px lightskyblue;
+      }
+      .top .box:hover {
+        box-shadow: 2px 4px black;
+        transform: scale(0.9);
+        background-color: skyblue;
+        transition: transform 0.1s;
+      }
+      .top .left .space {
+        display: flex;
+        flex-basis: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="left">
+          <div class="box">esc</div>
+          <div class="box">f1</div>
+          <div class="box">f2</div>
+          <div class="box">f3</div>
+          <div class="box">f4</div>
+          <div class="box">f5</div>
+          <div class="box">f6</div>
+          <div class="box">f7</div>
+          <div class="box">f8</div>
+          <div class="box">f9</div>
+          <div class="box">f10</div>
+          <div class="box">f11</div>
+          <div class="box">f12</div>
+          <div class="box">prt sc</div>
+          <div class="box">delete</div>
+        </div>
+        <div class="right">
+          <div class="box">Home</div>
+          <div class="box">end</div>
+          <div class="box">pg up</div>
+          <div class="box">pg dn</div>
+        </div>
+      </div>
+      <div class="top">
+        <div class="left">
+          <div class="box telda">~</div>
+          <div class="box">!</div>
+          <div class="box">@</div>
+          <div class="box">#</div>
+          <div class="box">$</div>
+          <div class="box">%</div>
+          <div class="box">^</div>
+          <div class="box">&</div>
+          <div class="box">*</div>
+          <div class="box">&LeftAngleBracket;</div>
+          <div class="box">&RightAngleBracket;</div>
+          <div class="box">-</div>
+          <div class="box">+ =</div>
+          <div class="box">Backspace</div>
+        </div>
+        <div class="right">
+          <div class="box">numlock</div>
+          <div class="box">/</div>
+          <div class="box">*</div>
+          <div class="box">_ -</div>
+        </div>
+      </div>
+      <div class="top">
+        <div class="left">
+          <div class="box tab">tab</div>
+          <div class="box">Q</div>
+          <div class="box">W</div>
+          <div class="box">E</div>
+          <div class="box">R</div>
+          <div class="box">T</div>
+          <div class="box">Y</div>
+          <div class="box">U</div>
+          <div class="box">I</div>
+          <div class="box">O</div>
+          <div class="box">P</div>
+          <div class="box">&lbrace; &lsqb;</div>
+          <div class="box">&rbrace; &rsqb;</div>
+          <div class="box">| \</div>
+        </div>
+        <div class="right">
+          <div class="box">7</div>
+          <div class="box">8</div>
+          <div class="box">9</div>
+          <div class="box">+</div>
+        </div>
+      </div>
+      <div class="top">
+        <div class="left">
+          <div class="box caplock">cap lock</div>
+          <div class="box">A</div>
+          <div class="box">S</div>
+          <div class="box">D</div>
+          <div class="box">F</div>
+          <div class="box">G</div>
+          <div class="box">H</div>
+          <div class="box">J</div>
+          <div class="box">K</div>
+          <div class="box">L</div>
+          <div class="box">; :</div>
+          <div class="box">" '</div>
+          <div class="box enter">Enter</div>
+        </div>
+        <div class="right">
+          <div class="box">4</div>
+          <div class="box">5</div>
+          <div class="box">6</div>
+        </div>
+      </div>
+      <div class="top">
+        <div class="left">
+          <div class="box shift">Shift</div>
+          <div class="box">Z</div>
+          <div class="box">X</div>
+          <div class="box">C</div>
+          <div class="box">V</div>
+          <div class="box">B</div>
+          <div class="box">N</div>
+          <div class="box">M</div>
+
+          <div class="box">&GreaterLess;</div>
+          <div class="box">? /</div>
+          <div class="box shift">Shift/pause</div>
+        </div>
+        <div class="right">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+        </div>
+      </div>
+      <div class="top">
+        <div class="left">
+          <div class="box">Ctrl</div>
+          <div class="box">Fn</div>
+          <div class="box fa fa-windows"></div>
+          <div class="box">alt</div>
+          <div class="box space">Space</div>
+          <div class="box">alt</div>
+          <div class="box">Ctrl</div>
+          <div class="box">&larr;</div>
+          <div class="box arrow">
+            <div class="up">&uarr;</div>
+            <div class="down">&darr;</div>
+          </div>
+
+          <div class="box">&rarr;</div>
+        </div>
+        <div class="right">
+          <div class="box zero">0</div>
+          <div class="box">. del</div>
+          <div class="box">enter</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
